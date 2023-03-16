@@ -21,8 +21,8 @@ function displayEquation() {
   let x = displayEquation();//execução pra mostrar a operação
   let points = 300;//valor pré-fixado
 
-  function checkanswer(){
-    //função que checa se a resposta está certa
+  function checkanswer(){//função que checa se a resposta está certa
+    
     const answer = parseInt(document.getElementById("answer").value);
     //transformar o valor do input em int
     const result = document.getElementById("result");
