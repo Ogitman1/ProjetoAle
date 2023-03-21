@@ -11,7 +11,11 @@ var answer =  document.getElementById("answer"); // select the answer input elem
     var n7 = document.getElementById("n7");
     var n8 = document.getElementById("n8");
     var n9 = document.getElementById("n9");
+    var del = document.getElementById("del");
   
+    del.addEventListener("click", function(e){
+      answer.value = "";
+    })
     // add event listeners to the numeric buttons
     n0.addEventListener("click", function() {
       answer.value += "0";

@@ -1,4 +1,4 @@
-var seconds = 60;
+var seconds = 20;
 function countdown() {
     
     const timer = document.getElementById("timer");
@@ -18,7 +18,7 @@ function countdown() {
     const levell = document.getElementById("ll");
     level = 1
     levell.innerHTML =`Level: ${level}`;
-    seconds = 60;
+    seconds = 20;
     points = 0;
     points += 300;
     const timer = document.getElementById("timer");

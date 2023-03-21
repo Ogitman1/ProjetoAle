@@ -1,0 +1,35 @@
+body {
+    background-color: #4b0082;
+  }
+  
+input#answer {
+    
+}
+
+/* Style the buttons as circles with white text */
+button {
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    color: white;
+    width: 3em; /* adjust as needed */
+    height: 3em; /* adjust as needed */
+    text-align: center;
+    font-size: 1.5em; /* adjust as needed */
+    padding: 0; /* remove default padding */
+  }
+  /* Style the button container */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+/* Style the individual buttons */
+  .container button {
+    margin: 0.5em; /* add spacing between buttons */
+  }
+
+

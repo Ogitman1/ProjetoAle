@@ -6,12 +6,12 @@ var level = 1;
 function generateEquation(){
   //Passo 1: Lógica pra montar a equação
     const x = Math.floor(Math.random() *(max - min+ 1) ) + min;
-    const equation = `What is X + ${x} = ${x *2} ?`
+    const equation = `+ ${x} = ${x *2} ?`
     return {x, equation};
 }
 function displayEquation() {
   //Passo 2: Pegando o document pra mostrar o problema
-    const { x, equation } = generateEquation();
+    const { x, equation } = generateEquation(); //pega os valores da função
     document.getElementById("equation").innerHTML = equation;
     document.getElementById("answer").value = "";
     document.getElementById("result").innerHTML = "";
