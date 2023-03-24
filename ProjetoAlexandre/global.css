@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+body{
+    background-color: rgb(148, 10, 202);
+}
+header {
+    box-shadow: -3px 3px 4px black;
+    text-shadow: -3px 0px 2px black;
+    padding: 4px;
+    justify-content: center;
+    display: flex;
+    height: 10 vh;
+    background-color: rgb(23, 19, 82);
+}
+p{
+    font-size: 30px;
+    text-shadow: 2px 0px 2px black;
+    top: 13%;
+    position: absolute;
+    left: 40%;
+}
+p#result{
+    font-size: 25px;
+    position: absolute;
+    left: 40%;
+    top: 45%;
+}
+div#organ{
+    position: absolute;
+    left: 40%;
+    top: 27%
+}
+input#answer{
+    border-radius: 5px;
+    box-shadow: 2px 0px 2px black;
+    padding: 2px 4px 2px 4px;
+    margin-right: 7px;
+    color: black;
+}
+button{
+    border-radius: 8px;
+    padding: 2px;
+    padding: 2px 4px 2px 4px ;
+    color: rgb(44, 44, 44);
+    background-color: rgb(238, 226, 226);
+}
+div#ll{
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+    text-shadow: 2px 0px 2px black;
+    position: absolute;
+    left: 40%;
+    top: 22%
+}
+div#equation{
+    
+    text-shadow: 2px 0px 2px black;
+    position: absolute;
+    left: 40%;
+    top: 32%
+}
+div#btns{
+    
+    text-shadow: 2px 0px 2px black;
+    position: absolute;
+    left: 40%;
+    top: 37%
+}
+div#btns button{
+    border-radius: 8px;
+    padding: 4px;
+    color: rgb(44, 44, 44);
+    background-color: rgb(238, 226, 226);
+}
+

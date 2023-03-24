@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="global.css" type="text/css">
+    <title>Jogo de equações</title>
+    <link rel="stylesheet" href="global.css">
 </head>
 <body>
-    <h1>Countdown Timer</h1>
+  <header>
+    <h1>Contagem regressiva!</h1>
+  </header>
   <p id="timer"></p>
     <div id="ll"></div>
-    <input type="number" id="answer" placeholder="Enter your answer">
     <div id="equation"></div>
-  <div class="container">
-    <button id="new" onclick=checkanswer()>Send</button>
+    <div id="organ">
+    <input type="number" id="answer" placeholder="Enter your answer">
+    <button onclick=checkanswer()>Send</button>
     <button id="del">Delete</button>
     <button onclick=countdown1()>Restart</button>
+    </div>
+    <div id="btns">
     <button id="n0">0</button>
     <button id="n1">1</button>
     <button id="n2">2</button>
@@ -27,8 +31,8 @@
     <button id="n7">7</button>
     <button id="n8">8</button>
     <button id="n9">9</button>
-  </div>
-    
+    </div>
+  
     <p id="result"></p>
     
 </body>

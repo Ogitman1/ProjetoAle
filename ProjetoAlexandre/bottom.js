@@ -13,10 +13,10 @@ var answer =  document.getElementById("answer"); // select the answer input elem
     var n9 = document.getElementById("n9");
     var del = document.getElementById("del");
   
-    del.addEventListener("click", function(e){
-      answer.value = "";
-    })
     // add event listeners to the numeric buttons
+    del.addEventListener("click", function(){
+      answer.value = " ";
+    })
     n0.addEventListener("click", function() {
       answer.value += "0";
     });

@@ -6,12 +6,12 @@ var level = 1;
 function generateEquation(){
   //Passo 1: Lógica pra montar a equação
     const x = Math.floor(Math.random() *(max - min+ 1) ) + min;
-    const equation = `+ ${x} = ${x *2} ?`
+    const equation = `Quanto é X + ${x} = ${x *2} ?`
     return {x, equation};
 }
 function displayEquation() {
   //Passo 2: Pegando o document pra mostrar o problema
-    const { x, equation } = generateEquation(); //pega os valores da função
+    const { x, equation } = generateEquation();
     document.getElementById("equation").innerHTML = equation;
     document.getElementById("answer").value = "";
     document.getElementById("result").innerHTML = "";
@@ -19,7 +19,7 @@ function displayEquation() {
     return x;
   }
   let x = displayEquation();//execução pra mostrar a operação
-  let points = 300;//valor pré-fixado
+  let points = 50;//valor pré-fixado
 
   function checkanswer(){//função que checa se a resposta está certa
     
@@ -33,8 +33,8 @@ function displayEquation() {
         x = displayEquation();
     }
     else{
-       result.innerHTML = `Sorry, but that is not the right answer... ${points} `//perde 100 pontos 
-       points -= points;
+       result.innerHTML = `Desculpa, mas essa não é a resposta certa... ${points} `//perde 100 pontos 
+       points -= (points/5);
 
     }
 

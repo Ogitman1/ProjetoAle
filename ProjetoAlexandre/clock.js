@@ -1,4 +1,4 @@
-var seconds = 20;
+var seconds = 60;
 function countdown() {
     
     const timer = document.getElementById("timer");
@@ -6,8 +6,8 @@ function countdown() {
     seconds--;
   
     if (seconds < 0) {
-      timer.innerHTML = "Time's up!";
-      result.innerHTML = `Congratulations! You earned ${points} points`
+      timer.innerHTML = "O tempo acabou!";
+      result.innerHTML = `Parabéns! Você ganhou ${points} pontos :)`
       
     }
   }
@@ -18,7 +18,7 @@ function countdown() {
     const levell = document.getElementById("ll");
     level = 1
     levell.innerHTML =`Level: ${level}`;
-    seconds = 20;
+    seconds = 60;
     points = 0;
     points += 300;
     const timer = document.getElementById("timer");
